@@ -157,3 +157,27 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+const buttons = document.querySelectorAll('.show-img');
+
+const closeBg = document.getElementById("preview-close-background");
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    closeBg.style.display = 'block';
+    document.getElementById('preview').style.display = 'block';
+    document.getElementById('preview-image').setAttribute('src', button.getAttribute('imgRef'));
+  });
+});
+
+closeBg.addEventListener('click', () => {
+  document.getElementById('preview').style.display = 'none';
+  closeBg.style.display = 'none';
+
+});
+
+document.getElementById('preview-close-button').addEventListener('click', () => {
+  document.getElementById('preview').style.display = 'none';
+  closeBg.style.display = 'none';
+
+});

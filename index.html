@@ -26,6 +26,13 @@
 </head>
 
 <body>
+  <div id="preview-close-background"></div>
+  <div id="preview">
+    <div id="preview-inner">
+            <button id="preview-close-button">Zavřít</button>
+            <img id="preview-image">
+    </div>
+  </div>
 
   <!--
     - #MAIN
@@ -55,8 +62,7 @@
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Kontakt</span>
-
+          
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
@@ -190,7 +196,7 @@
           - service
         -->
 
-        <section class="service">
+        <!-- <section class="service">
 
           <h3 class="h3 service-title">Co mi fakt celkem jde</h3>
 
@@ -198,10 +204,10 @@
 
             <li class="service-item">
 
-              <!-- <div class="service-icon-box">
+               <div class="service-icon-box">
                 <img src="./assets/images/icon-design.svg
                 " alt="design icon" width="40">
-              </div> -->
+              </div> 
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Grafický design</h4>
@@ -211,13 +217,13 @@
                 </p>
               </div>
 
-            </li>
+            </li> 
 
             <li class="service-item">
 
-              <!-- <div class="service-icon-box">
+              <div class="service-icon-box">
                 <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div> -->
+              </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Web development</h4>
@@ -227,7 +233,7 @@
                 </p>
               </div>
 
-            </li>
+            </li> -->
 
           </ul>
 
@@ -597,12 +603,16 @@
 
           <ul class="project-list">
 
+          
+
             <li class="project-item  active" data-filter-item data-category="vizuální styl,logo,ilustrace">
               <a href="#">
 
+
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_SCG.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_SCG.png" alt="finance" loading="lazy">
@@ -611,16 +621,19 @@
                 <h3 class="project-title">Rebrand Student Cyber Games</h3>
 
                 <p class="project-category">Vizuální styl, Logo, Ilustrace</p>
+                </button>
 
               </a>
+              
             </li>
 
             <li class="project-item  active" data-filter-item data-category="vizuální styl,logo">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_InterBridge.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_InterBridge.png" alt="orizon" loading="lazy">
@@ -629,6 +642,7 @@
                 <h3 class="project-title">Českosaský projekt InterBridge</h3>
 
                 <p class="project-category">Vizuální styl, Logo</p>
+                </button>
 
               </a>
             </li>
@@ -636,9 +650,10 @@
             <li class="project-item  active" data-filter-item data-category="knižní grafika">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_cecelice.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_kniha-čečelice.png" alt="fundo" loading="lazy">
@@ -647,6 +662,7 @@
                 <h3 class="project-title">Čečelice</h3>
 
                 <p class="project-category">Knižní grafika</p>
+                </button>
 
               </a>
             </li>
@@ -654,9 +670,10 @@
             <li class="project-item  active" data-filter-item data-category="logotvorba">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_český-tenis.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_český-tenis.png" alt="brawlhalla" loading="lazy">
@@ -665,6 +682,7 @@
                 <h3 class="project-title">Český tenis</h3>
 
                 <p class="project-category">Logo</p>
+                </button>
 
               </a>
             </li>
@@ -672,9 +690,10 @@
             <li class="project-item  active" data-filter-item data-category="vizuální styl,logo,ilustrace">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_letka.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_kafe-letka.png" alt="dsm." loading="lazy">
@@ -683,6 +702,7 @@
                 <h3 class="project-title">Letka</h3>
 
                 <p class="project-category">Vizuální styl, Logo, Ilustrace</p>
+                </button>
 
               </a>
             </li>
@@ -690,9 +710,10 @@
             <li class="project-item  active" data-filter-item data-category="obal,ilustrace">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_Král-sýrů.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_kral-syru.png" alt="metaspark" loading="lazy">
@@ -701,6 +722,7 @@
                 <h3 class="project-title">100 let Král sýrů</h3>
 
                 <p class="project-category">Obal, Ilustrace</p>
+                </button>
 
               </a>
             </li>
@@ -708,9 +730,10 @@
             <li class="project-item  active" data-filter-item data-category="plakát">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_MUNI.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_MUNI-poster.png" alt="summary" loading="lazy">
@@ -719,6 +742,7 @@
                 <h3 class="project-title">Studentský plakát<table></table></h3>
 
                 <p class="project-category">Plakát</p>
+                </button>
 
               </a>
             </li>
@@ -726,9 +750,10 @@
             <li class="project-item  active" data-filter-item data-category="logo">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_DV.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_DV-detailing.png" alt="task manager" loading="lazy">
@@ -737,6 +762,7 @@
                 <h3 class="project-title">DV detailing</h3>
 
                 <p class="project-category">Logo</p>
+                </button>
 
               </a>
             </li>
@@ -744,9 +770,10 @@
             <li class="project-item  active" data-filter-item data-category="logo">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_ZKO.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_ZKO.png" alt="arrival" loading="lazy">
@@ -755,6 +782,7 @@
                 <h3 class="project-title">ZKO Mimoň</h3>
 
                 <p class="project-category">Logo</p>
+                </button>
 
               </a>
             </li>
@@ -762,9 +790,10 @@
             <li class="project-item  active" data-filter-item data-category="plakát, ilustrace">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_PPT-plakát.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_PPT-plakát.png" alt="arrival" loading="lazy">
@@ -773,6 +802,7 @@
                 <h3 class="project-title">Soutěž Prezentiáda</h3>
 
                 <p class="project-category">Plakát, Ilustrace</p>
+                </button>
 
               </a>
             </li>
@@ -780,9 +810,10 @@
             <li class="project-item  active" data-filter-item data-category="roll-up">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_PPT-rollup.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_PPT-rollup.png" alt="arrival" loading="lazy">
@@ -791,6 +822,7 @@
                 <h3 class="project-title">Soutěž Prezentiáda</h3>
 
                 <p class="project-category">Roll-up</p>
+                </button>
 
               </a>
             </li>
@@ -798,9 +830,10 @@
             <li class="project-item  active" data-filter-item data-category="roll-up,ilustrace">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_PPT-rollup-2023.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_PPT-2023-rollup.png" alt="arrival" loading="lazy">
@@ -809,6 +842,7 @@
                 <h3 class="project-title">Soutěž Prezentiáda</h3>
 
                 <p class="project-category">Roll-up, Ilustrace</p>
+                </button>
 
               </a>
             </li>
@@ -816,9 +850,10 @@
             <li class="project-item  active" data-filter-item data-category="plaketa">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_PPT-plaketa.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_PPT-trofej.png" alt="arrival" loading="lazy">
@@ -827,6 +862,7 @@
                 <h3 class="project-title">Soutěž Prezentiáda</h3>
 
                 <p class="project-category">Plaketa</p>
+                </button>
 
               </a>
             </li>
@@ -834,9 +870,10 @@
             <li class="project-item  active" data-filter-item data-category="vizuální styl,logo, ilustrace">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_TdAcademy.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_TdA-vizuální styl-academy.png" alt="arrival" loading="lazy">
@@ -845,6 +882,7 @@
                 <h3 class="project-title">Fiktivní klient na soutěži Tour de App</h3>
 
                 <p class="project-category">Vizuální styl, Logo, Ilutrace</p>
+                </button>
 
               </a>
             </li>
@@ -852,9 +890,10 @@
             <li class="project-item  active" data-filter-item data-category="plaketa">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_TdA-plaketa.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_TdA-trofej.png" alt="arrival" loading="lazy">
@@ -863,6 +902,7 @@
                 <h3 class="project-title">Tour de App</h3>
 
                 <p class="project-category">Plaketa</p>
+                </button>
 
               </a>
             </li>
@@ -870,9 +910,10 @@
             <li class="project-item  active" data-filter-item data-category="roll-up">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_XO-rollup.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_XO-rollup.png" alt="arrival" loading="lazy">
@@ -881,6 +922,7 @@
                 <h3 class="project-title">Soutěž pIšQworky</h3>
 
                 <p class="project-category">Roll-up</p>
+                </button>
 
               </a>
             </li>
@@ -888,9 +930,10 @@
             <li class="project-item  active" data-filter-item data-category="plakát">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_XO-plakát.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_XO-plakát.png" alt="arrival" loading="lazy">
@@ -899,6 +942,7 @@
                 <h3 class="project-title">Soutěž pIšQworky</h3>
 
                 <p class="project-category">Plakát</p>
+                </button>
 
               </a>
             </li>
@@ -906,9 +950,10 @@
             <li class="project-item  active" data-filter-item data-category="textil,ilustrace">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_ATuin.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_triko-atuin.png" alt="arrival" loading="lazy">
@@ -917,6 +962,7 @@
                 <h3 class="project-title">Zeměplocha a A'Tuin</h3>
 
                 <p class="project-category">Textil, Ilustrace</p>
+                </button>
 
               </a>
             </li>
@@ -924,9 +970,10 @@
             <li class="project-item  active" data-filter-item data-category="ilustrace">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_FULL_DND.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
 
                   <img src="./assets/images/web-portfolio_DND.png" alt="arrival" loading="lazy">
@@ -935,6 +982,7 @@
                 <h3 class="project-title">Kobolt z Dungeons & Dragons</h3>
 
                 <p class="project-category">Ilustrace</p>
+                </button>
 
               </a>
             </li>
@@ -942,10 +990,12 @@
             <li class="project-item  active" data-filter-item data-category="logo">
               <a href="#">
 
+                <button class="show-img" imgRef="./assets/images/web-portfolio_sekání.png">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div class="project-item-icon-box" style="width: 30%;">
+                    <img src="./assets/images/web-OPEN.svg">
                   </div>
+                
 
                   <img src="./assets/images/web-portfolio_sekání.png" alt="arrival" loading="lazy">
                 </figure>
@@ -953,6 +1003,7 @@
                 <h3 class="project-title">Sekání trávníků</h3>
 
                 <p class="project-category">Logo</p>
+                </button>
 
               </a>
             </li>
