@@ -1382,7 +1382,7 @@ textarea.form-input::-webkit-resizer {
  * responsive larger than 450px screen
  */
 
-@media (min-width: 450px) {
+@media (min-width: 400px) {
 
   /**
    * client
@@ -1401,6 +1401,22 @@ textarea.form-input::-webkit-resizer {
   .project-img,
   .blog-banner-box {
     height: auto;
+  }
+
+  #preview {
+      width: 100%;
+
+  }
+  
+  #preview-inner {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  #preview-image {
+  max-width: 100%;
+  height: auto;
   }
 
 }
@@ -1494,7 +1510,7 @@ textarea.form-input::-webkit-resizer {
    */
 
   .sidebar {
-    max-height: 180px;
+    /* max-height: 180px; */
     margin-bottom: 30px;
   }
 
@@ -1763,20 +1779,7 @@ textarea.form-input::-webkit-resizer {
     font-size: 18px;
   }
 
-  #preview {
-    height: auto;
-    width: 80%;
-  }
   
-  #preview-inner {
-    height: auto;
-    width: 100%;
-  }
-
-  #preview-image {
-    height: auto;
-    width: 100%;
-  }
 
 }
 
@@ -1789,6 +1792,10 @@ textarea.form-input::-webkit-resizer {
  */
 
 @media (min-width: 768px) {
+
+  #preview-image {
+  max-width: unset;
+  }
 
   /**
    * REUSED STYLE
@@ -2194,7 +2201,7 @@ textarea.form-input::-webkit-resizer {
   transform: translate(-50%, -50%);
   z-index: 100;
   padding: 20px;
-  background-color: #57857a;
+  background-color: #f8edeb;
   border-radius: 20px;
   /* box-shadow: var(--shadow-6); */
 }
@@ -2207,7 +2214,13 @@ textarea.form-input::-webkit-resizer {
 }
 
 #preview-close-button {
-  position: absolute;  
+  position: absolute;
+  right: 0;
+  background-color: #292929cc;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-1);
+  color: white;
 }
 
 #preview-close-background {
