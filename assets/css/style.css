@@ -61,7 +61,7 @@
    */
 
   /* font-family */
-  --ff-poppins: 'Quicksand Regular', sans-serif;
+  --ff-quicksand: 'Quicksand', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -159,7 +159,7 @@ textarea {
 }
 
 html {
-  font-family: var(--ff-poppins);
+  font-family: var(--ff-quicksand);
 }
 
 html {
